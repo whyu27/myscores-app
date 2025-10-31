@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hitung Nilai Mata Kuliah | Whyu</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Hitung Nilai Mata Kuliah</h2>
+
+  <label>Nama Mata Kuliah:</label>
+  <input type="text" id="matkul" placeholder="Contoh: Kalkulus">
+
+  <label>Jumlah ASN:</label>
+  <input type="number" id="jumlahAsn" min="1" placeholder="Contoh: 4">
+
+  <button onclick="buatFormAsn()">Buat Form ASN</button>
+
+  <div id="formAsn"></div>
+
+  <button id="btnHitung" onclick="hitungNilai()" style="display: none;">Hitung Nilai Akhir</button>
+
+  <h3 id="hasil"></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>

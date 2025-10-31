@@ -1,0 +1,122 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: #f4f7f8;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Label */
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  color: #34495e;
+}
+
+/* Input umum */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #2980b9;
+  outline: none;
+  background-color: #ecf6fd;
+}
+
+/* Container ASN input */
+.asn-input {
+  background: white;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Tombol */
+button {
+  display: block;
+  margin: 25px auto 0;
+  padding: 12px 30px;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(52,152,219,0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  box-shadow: 0 6px 20px rgba(52,152,219,0.6);
+}
+
+/* Hasil */
+#hasil {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  color: #27ae60;
+  font-weight: 700;
+}
+
+/* Tampilan untuk layar dengan lebar maksimum 480px (mobile) */
+@media (max-width: 480px) {
+  body {
+    padding: 15px 20px;
+    max-width: 100%;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  button {
+    width: 90%;       /* Lebih lebar di mobile supaya gampang ditekan */
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #hasil {
+    font-size: 18px;
+  }
+}
+
